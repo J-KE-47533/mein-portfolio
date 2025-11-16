@@ -1,5 +1,5 @@
 header {
-    height: calc(100dvh - env(safe-area-inset-bottom));
+    height: calc(100dvh - constant(safe-area-inset-bottom));
     /* height: 100dvh; */
 }
 
