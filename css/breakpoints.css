@@ -504,4 +504,8 @@
         flex-basis: 100%;
         max-width: 100%;
     }
+
+    .full-preafix-1 {
+        margin-right: 8.33333333333%;
+    }
 }
