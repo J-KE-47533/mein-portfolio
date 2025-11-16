@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navi.style.padding = "2rem 0";
             logo.style.width = "100%";
             navMain.style.backgroundColor = "rgba(0, 0, 0, 0)";
-            navMain.style.backdropFilter = "blur(6px)";
+            navMain.style.backdropFilter = "blur(0)";
         }
     })
 })
