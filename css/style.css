@@ -86,7 +86,7 @@
 
 /* Hintergrund der Scrollleiste */
 ::-webkit-scrollbar-track {
-    background: #f0f0f0;
+    background: #b5b5b5;
     /* Farbe des Tracks */
     border-radius: 20px;
     /* Abgerundete Ecken */
@@ -238,7 +238,7 @@ a:hover {
 
 p {
     margin: 0;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5em;
     font-size: 16px;
     line-height: 26px;
 }

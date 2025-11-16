@@ -1,8 +1,3 @@
-header {
-    height: calc(100dvh - constant(safe-area-inset-bottom));
-    /* height: 100dvh; */
-}
-
 .section {
     padding: 5rem 0;
     position: relative;
@@ -48,7 +43,7 @@ header .img-absolute-ct {
 
     img {
         object-fit: contain;
-        object-position: bottom;
+        object-position: bottom right;
     }
 }
 
@@ -62,64 +57,70 @@ header .img-absolute-ct::before {
     z-index: -1;
 }
 
-/* Anfahrt */
-
-body.anfahrt input {
+.imgs-absolute-ct {
+    position: relative;
     width: 100%;
-}
+    height: 100%;
+    display: block;
+    min-height: 450px;
 
-body.anfahrt .form-container, body.kontakt .form-container {
-    display: flex !important;
-    border: 2px solid var(--bg-color-light) !important;
-    border-radius: 20px !important;
-    height: unset;
-    padding: 3rem 0;
-}
 
-body.kontakt input, body.kontakt textarea {
-    border-color: var(--bg-color-light) !important;
-}
+    figure {
+        position: absolute;
+        width: 60% !important;
+        height: 70% !important;
+        top: 0;
+        right: 0;
 
-body.kontakt input[id="datenschutz"]:before {
-    background-color: var(--bg-color-light) !important;
-}
+        img {
+            width: 100% !important;
+        }
+    }
 
-body.kontakt textarea[id="nachricht"] {
-    height: 10rem;
-    width: 100%; /* Passt die Breite an den Container an */
-    resize: vertical; /* Erlaubt dem Nutzer, die Höhe zu ändern */
-    overflow-wrap: break-word; /* Bricht Wörter, die zu lang sind */
-    overflow-x: hidden; /* Verhindert horizontalen Scrollbalken */
-    padding: 10px; /* Innerer Abstand für besseren Textabstand */
-    box-sizing: border-box; /* Enthält Padding und Border in der Breite */
-}
-
-body.kontakt .form-section {
-    height: unset;
+    figure:last-child {
+        bottom: 0;
+        left: 0;
+        right: unset;
+        top: unset;
+    }
 }
 
 
- 
+
 /* Small */
 
-@media screen and (min-width:640px) {
-
-}
+@media screen and (min-width:640px) {}
 
 /* Medium */
 
-@media screen and (min-width:760px) {
-
-}
+@media screen and (min-width:760px) {}
 
 /* Large */
 
 @media screen and (max-width: 992px) {
     header {
         margin-top: 3rem !important;
-        height: calc(100vh - 3rem);
+        height: 80vh;
     }
-    
+
+    figure {
+        left: 0;
+    }
+
+    figure:last-child {
+        right: 0 !important;
+        left: unset !important;
+    }
+
+    .img-absolute-ct {
+        height: 80% !important;
+        img {
+            width: 100%;
+            object-fit: contain;
+            object-position: bottom right !important;
+        }
+    }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -128,33 +129,30 @@ body.kontakt .form-section {
         padding: 12rem 0;
     }
 
+    header {
+        height: 100vh;
+    }
+
     header .img-absolute-ct {
-    width: 30%;
+        width: 30%;
     }
 
     h1 {
         font-size: 60px;
         line-height: 70px;
+
         span {
             font-size: 33.75px;
         }
     }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1200px) {}
 
-}
-
-@media screen and (max-width: 1363px) {
-
-}
+@media screen and (max-width: 1363px) {}
 
 @media screen and (min-width:1364px) {
     .section {
         padding: 17rem 0;
     }
 }
-
-
-
-
