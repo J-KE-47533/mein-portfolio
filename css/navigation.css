@@ -1,0 +1,18 @@
+body.scroll {
+    .navmain .branding img {
+        width: 70%;
+    }
+
+    .navmain {
+        background-color: rgba(0, 0, 0, .4);
+        backdrop-filter: blur(6px);
+        padding: 14px 0;
+    }
+
+    .mobilnav {
+        background-color: rgba(0, 0, 0, .4);
+        backdrop-filter: blur(6px);
+        border-bottom: 1px solid white;
+        height: 2.5rem;
+    }
+}

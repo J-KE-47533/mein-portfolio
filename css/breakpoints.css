@@ -35,6 +35,12 @@
     justify-content: flex-start;
 }
 
+.row.break-left {
+    margin-left: 0;
+    margin-right: auto;
+    justify-content: flex-start;
+}
+
 
 
 .col {
@@ -195,6 +201,7 @@
     .col {
         text-align: left;
     }
+
     .navmain {
         display: block;
     }
@@ -414,11 +421,13 @@
         max-width: 100%;
     }
 
-    .break-right .huge-suffix-1 {
+    .break-right .huge-suffix-1,
+    .break-left .huge-suffix-1 {
         margin-right: calc(1620px / 12 * 1);
     }
 
-    .break-right .huge-5 {
+    .break-right .huge-5,
+    .break-left .huge-5 {
         max-width: calc(1620px / 12 * 5);
     }
 
@@ -502,5 +511,9 @@
 
     .full-preafix-1 {
         margin-right: 8.33333333333%;
+    }
+
+    .full-suffix-1 {
+        margin-left: 8.33333333333%;
     }
 }
