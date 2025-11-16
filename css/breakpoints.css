@@ -10,6 +10,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
+    gap: 1rem 0;
 }
 
 .row.space-between {

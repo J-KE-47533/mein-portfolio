@@ -113,7 +113,7 @@ figure {
 
 figure img {
   height: 100% !important;
-  filter: brightness(.9) grayscale(100%);
+  /* filter: brightness(.9) grayscale(70%); */
   position: relative;
   /* sanfter Übergang beim Hover */
   transition: filter 0.5s ease;
@@ -121,7 +121,7 @@ figure img {
 
 figure img:hover {
   /* Beim Hover wieder Farbe */
-  filter: brightness(1) grayscale(0%);
+  /* filter: brightness(1) grayscale(0%); */
 }
 
 picture {
