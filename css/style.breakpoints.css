@@ -1,5 +1,6 @@
 header {
-    height: 100dvh;
+    height: calc(100dvh - env(safe-area-inset-bottom));
+    /* height: 100dvh; */
 }
 
 .section {
@@ -122,9 +123,6 @@ body.kontakt .form-section {
 }
 
 @media screen and (min-width: 992px) {
-    header {
-        height: 100vh !important;
-    }
 
     .section {
         padding: 12rem 0;
